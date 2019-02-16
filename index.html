@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Home Page</title>
+	<link rel="stylesheet" href="dist/main.css">
+	<link rel="stylesheet" href="dist/fontawsome/fontawsome-5.6.3.css">
+	<script>
+		function openMessage() {
+			var name = document.getElementById('nama').value;
+			var message = document.getElementById('pesan').value;
+			var targetNumber = '6285759075605';
+			// var targetNumber = '628997070795';
+			var messageText ="Halo nama saya "+name+ " " + message;
+			var whatsappAPI = "https://api.whatsapp.com/send?phone="+targetNumber+"&text="+encodeURI(messageText);
+			console.log({
+				name,
+				message,
+				targetNumber,
+				whatsappAPI,
+			});
+			window.open(whatsappAPI);
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<header>
+				<nav>
+					<img src="assets/logo-header.jpg" alt="Prudential Logo"/>
+				</nav>
+				<div class="head-content">
+					<div class="head-filter"></div>
+					<div class="row head-inner">
+						<div class="col-6 left-col">
+							<h1>Prudential Wakaf</h1>
+							<p>(Prudential Indonesia) meluncurkan Program Wakaf dari PRUsyariah yang menawarkan pilihan bagi nasabah dan calon nasabah dalam menyalurkan wakaf. Program ini sekaligus melengkapi serangkaian produk dan layanan asuransi berbasis syariah yang komprehensif dari Prudential.</p>
+						</div>
+						<div class="col-6 right-col">
+							<div class="form-hubungi">
+								<div class="form-title">
+									<h4>Hubungi Kami, Dengan Mudah</h4>
+								</div>
+								<div class="form-body">
+									<form onsubmit="openMessage();return false" method="POST">
+										<input type="input" name="nama" id="nama" placeholder="Masukan Nama" required>
+										<textarea rows="5" placeholder="Masukan Pesan Anda.." name="pesan" id="pesan" required></textarea>
+										<button type="submit">Chat <small class="text-green">Online</small></button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</header>
+		<!-- SECTION 1 -->
+		<section class="row">
+			<div class="col-12 center reset-mg">
+				<h3>Wakaf Pilihan Anda</h3>
+			</div>
+			<div class="col-6">
+				<img width="100%" height="300" src="http://tabungwakaf.com/wp-content/uploads/2015/11/CIVILITA-COM-BERITA-ISLAM-PERADABAN-love-wakaf.jpg"/>
+			</div>
+			<div class="col-6">
+				<p class="justify reset-mg">
+					sekarang ini dg situasi tak menentu..politik dalam negeri..musibah sering terjadi....investasi
+					apa yg bisa menjamin semua iru....investasi property,tanah..itu bagus...tapi ada yg lebih bagus lg investasi utk jangka panjang....
+					kami punya solusi yaitu investasi dimana bpk ibu dihari tua sdh mendapatkan jaminan keuangan...apabila ditengah jalan bpk ibu ada 
+					mslh kesehatan misalnya kritis ..investasi inilah akan mengcover hal tsb...tapi lain halnya dg investasi tanah,rmh..ketuka kita mengalami ketidak mampu..
+				</p>
+			</div>
+		</section>
+		<!-- SECTION 2 -->
+		<section class="row bg-blue">
+			<div class="col-6">
+				<br>
+				<p class="justify reset-mg">
+					sekarang ini dg situasi tak menentu..politik dalam negeri..musibah sering terjadi....investasi
+					apa yg bisa menjamin semua iru....investasi property,tanah..itu bagus...tapi ada yg lebih bagus lg investasi utk jangka panjang....
+					kami punya solusi yaitu investasi dimana bpk ibu dihari tua sdh mendapatkan jaminan keuangan...apabila ditengah jalan bpk ibu ada 
+				</p>
+			</div>
+			<div class="col-6">
+				<br>
+				<video width="100%" height="270" controls>
+					<source src="assets/wakaf-produk.mp4" type="video/mp4">
+				</video>
+			</div>
+		</section>
+		<!-- SECTION 3 -->
+		<section class="row">
+			<div class="col-6">
+					<img width="100%" height="300" src="https://images.livemint.com/rf/Image-621x414/LiveMint/Period2/2016/05/17/Photos/mfplan1-kr7D--621x414@LiveMint.jpg"/>
+			</div>
+			<div class="col-6">
+				<p class="justify reset-mg">
+						Indonesia memiliki penduduk Muslim terbesar di dunia, yang berarti bahwa wakaf asuransi memiliki potensi besar untuk mendorong pembangunan ekonomi, serta mengurangi kemiskinan dan ketimpangan di negeri ini
+				</p>
+			</div>
+		</section>
+		<footer class="row">
+			<div class="col-12 center">
+					<br/><br/>
+					<img height="100" width="200" src="https://www.shine4women.com/wp-content/uploads/2016/12/prudential.png"/>
+					<p class="center">
+							Indonesia merupakan salah satu dari 20 ekonomi terbesar di dunia.<br/>
+							Meskipun terdapat kemajuan dalam pengurangan kemiskinan<br/>
+							beberapa tahun terakhir ini, masalah  kemiskinan masih menjadi tantangan, <br/>
+							mari membanung ekonomi yang lebih baik dengan bergabung berwakaf bersama kami.<br/>
+					</p>
+					<br/><br/>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

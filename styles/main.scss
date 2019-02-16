@@ -1,0 +1,113 @@
+@import 'base/variable';
+@import 'base/mixin';
+@import 'base/animation';
+@import 'vendor/simple-grid';
+
+/* Master CSS */
+header{
+    nav {
+        background: white;
+        height: 40px;
+        padding: 10px;
+        // border: 1px solid #ddd;
+        text-align: center;
+        img{
+            height: 100%;
+        }
+    }
+    .head-content {
+        // border: 1px solid yellowgreen;
+        position: relative;
+        background-color: white;
+        background-image: url("https://www.bupaglobal.com/-/media/images/pages/product-line-ipmi/productline_1_header.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include mGrid{
+            height: 400px;
+        }
+    }
+    .head-filter{
+        @include mGrid{
+            position: absolute;
+            z-index: 2;
+        }
+        background-color: black;
+        opacity: 0.2;
+        height: 100%;
+        width: 100%;
+    }
+    .head-inner{
+        @include mGrid{
+            position: absolute;
+            z-index: 3;
+        }
+        // border: 2px cyan dashed;
+        .left-col {
+            color: white;
+            // border: 1px white solid;
+        }
+        .right-col{
+            // background-color: blue;
+        }
+        .form-hubungi{
+            @include mGrid{
+                margin-top: 30px;
+            }
+            margin: auto;
+            width: 300px;
+            background-color: #b71c1c;
+            padding: 20px;
+            border-radius: 5px;
+            .form-title{
+                color: white;
+                text-align: center;
+                h4{
+                    margin-top: 0;
+                }
+            }
+            .form-body{
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    input{
+                        padding: 10px;
+                        border-radius: 5px;
+                        font-size: 0.8em;
+                    }
+                    textarea{
+                        margin-top:5px;
+                        margin-bottom: 5px;
+                        border-radius: 5px;
+                        padding: 10px;
+                        font-size: 0.8em;
+                    }
+                    button{
+                        padding: 10px;
+                        border-radius: 5px;
+                        font-size: 0.8em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.reset-mg {
+    margin: 0;
+}
+
+.bg-blue {
+    background-color: #f3f8f8;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: #65747b;
+    border-radius: 5px;
+    color: #f3f8f8;
+}
+.text-green{
+    margin-top: 10px;
+    color: green;
+    font-weight: bold;
+}
